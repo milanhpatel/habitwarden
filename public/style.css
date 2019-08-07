@@ -1,5 +1,8 @@
 body {
   font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 a {
@@ -18,4 +21,48 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins;
+}
+
+p {
+  font-family: Roboto;
+}
+
+.navbar-default {
+  background: #fff;
+  border: 0;
+  font-family: Poppins;
+  font-size: 20px;
+  color: #000 !important;
+  font-weight: bold;
+}
+
+#showcase {
+  margin-top: 90px;
+}
+
+#testimonial {
+  background-color: #f1f1f1;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#testimonial p {
+  font-size: 32px;
+  font-family: 'Josefin Sans';
+  color: #000;
+}
+
+#testimonial p.customer {
+  font-size: 20px;
+  color: #666;
 }

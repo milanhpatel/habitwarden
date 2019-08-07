@@ -5,9 +5,10 @@ import {Link} from 'react-router-dom'
 import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
-  <div>
+  <div className="navbar navbar-default d-flex justify-content-start">
+    {/*<div className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">*/}
     <h1>habit warden</h1>
-    <nav>
+    <nav className="">
       {isLoggedIn ? (
         <div>
           {/* The navbar will show these links after you log in */}

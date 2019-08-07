@@ -1,7 +1,7 @@
 {
-  "name": "boilermaker",
+  "name": "habitwarden",
   "version": "2.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description": "text message app that helps you track habits",
   "engines": {
     "node": ">= 7.0.0"
   },

@@ -9,56 +9,68 @@ import Fade from 'react-reveal/Fade'
 // const txtElement = document.querySelector('.txt-type')
 // const words = JSON.parse('["Developer", "Designer", "Creator"]')
 // const wait = 3000
+const pStyle = {
+  fontSize: '46px',
+  fontFamily: 'Josefin Sans',
+  color: '#101357'
+}
 
 export default function Home() {
   return (
     <div>
       <section id="showcase">
-        <div className="container">
-          <div className="row">
-            <Fade left duration={2000} distance="300px">
-              <div className="col-md-6 col-sm-6">
-                <div className="showcase-left">
-                  <h1>
-                    Habit Warden is the simplest way to track and reinforce your
-                    habits.
-                  </h1>
-                  {/* <h1>X:  
+        <div id="showcase_first">
+          <div className="container">
+            <div className="row">
+              <Fade left duration={2000} distance="300px">
+                <div className="col-md-6 col-sm-6">
+                  <div className="showcase-left">
+                    <h1>
+                      <p style={pStyle}>Habit Warden </p> is the simplest way to
+                      track and reinforce your habits.
+                    </h1>
+                    {/* <h1>X:  
       <span className="txt-type" data-wait="3000" data-words='["Developer", "Designer", "Creator"]'></span>
     </h1> */}
 
-                  {/*new TypeWriter(txtElement, words, wait)*/}
-                  {/*<p> X </p>*/}
+                    {/*new TypeWriter(txtElement, words, wait)*/}
+                    {/*<p> X </p>*/}
+                  </div>
                 </div>
-              </div>
-            </Fade>
-            <Fade right duration={2000} distance="300px">
-              <div className="col-md-6 col-sm-6">
-                <div className="showcase-right">
-                  {/*<h1> X </h1>*/}
-                  <p>
-                    We've heard{' '}
-                    <b>
-                      friction of tracking is the biggest barrier to
-                      consistency.
-                    </b>
-                  </p>
-                  <p>
-                    And the{' '}
-                    <b> biggest barrier to consistency is a lack of tracking</b>{' '}
-                    the important things.
-                  </p>
-                  <p>
-                    See the conundrum?{' '}
-                    <b> Get on the right path in less than 3 minutes below.</b>
-                  </p>
+              </Fade>
+              <Fade right duration={2000} distance="300px">
+                <div className="col-md-6 col-sm-6">
+                  <div className="showcase-right">
+                    {/*<h1> X </h1>*/}
+                    <p>
+                      We've heard{' '}
+                      <b>
+                        friction of tracking is the biggest barrier to
+                        consistency.
+                      </b>
+                    </p>
+                    <p>
+                      And the{' '}
+                      <b>
+                        {' '}
+                        biggest barrier to consistency is a lack of tracking
+                      </b>{' '}
+                      the important things.
+                    </p>
+                    <p>
+                      See the conundrum?{' '}
+                      <b>
+                        {' '}
+                        Get on the right path in less than 3 minutes below.
+                      </b>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Fade>
+              </Fade>
+            </div>
           </div>
         </div>
       </section>
-      <hr />
       <section id="number_banner">
         <Fade left duration={2000} distance="300px">
           <div className="container">
@@ -69,6 +81,7 @@ export default function Home() {
         </Fade>
       </section>
 
+      <hr />
       <section id="testimonial">
         <Fade right duration={2000} distance="300px">
           <div className="container">
@@ -192,7 +205,9 @@ export default function Home() {
                       </i>
                     </p>{' '}
                     <br />
-                    <p>Text Habit Warden, be 1% better every day.</p>
+                    <p>
+                      Text <b>+1 (X12)-345-6789</b> to be 1% better every day.
+                    </p>
                   </div>
                 </div>
               </Fade>

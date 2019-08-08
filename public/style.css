@@ -36,13 +36,16 @@ p {
   font-family: Roboto;
 }
 
-.navbar-default {
-  background: #fff;
+.navbar {
+  background: #000;
   border: 0;
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 22px;
   color: #000 !important;
-  font-weight: bold;
+}
+
+.navbar-brand {
+  font-size: 32px;
 }
 
 #showcase {
@@ -65,4 +68,8 @@ p {
 #testimonial p.customer {
   font-size: 20px;
   color: #666;
+}
+
+.forms {
+  margin-left: 150px;
 }

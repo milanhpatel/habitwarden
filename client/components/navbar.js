@@ -5,27 +5,50 @@ import {Link} from 'react-router-dom'
 import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
-  <div className="navbar navbar-default d-flex justify-content-start">
-    {/*<div className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">*/}
-    <h1>habit warden</h1>
-    <nav className="">
-      {isLoggedIn ? (
-        <div>
-          {/* The navbar will show these links after you log in */}
-          <Link to="/home">Home</Link>
-          <a href="#" onClick={handleClick}>
-            Logout
-          </a>
-        </div>
-      ) : (
-        <div>
-          {/* The navbar will show these links before you log in */}
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
-        </div>
-      )}
+  <div>
+    <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <div className="container">
+        <a className="navbar-brand" href="/">
+          Habit Warden
+        </a>
+        <button
+          type="button"
+          className="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
+        {!isLoggedIn ? (
+          <div className="collapse navbar-collapse" id="navbarMenu">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <a href="/">home</a>
+              </li>
+              <li className="nav-item">
+                <a href="/login">login</a>
+              </li>
+              <li className="nav-item">
+                <a href="/signup">sign up</a>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          <div className="collapse navbar-collapse" id="navbarMenu">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <a href="/">home</a>
+              </li>
+              <li className="nav-item">
+                <a href="/" onClick={handleClick}>
+                  logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
     </nav>
-    <hr />
   </div>
 )
 
